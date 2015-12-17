@@ -20,7 +20,7 @@ dimZ = 3
 dimX = 5
 dimY = dimX
 
-# LED's position
+# LED's position (m)
 xt = dimX*0.5
 yt = dimY*0.5
 
@@ -63,6 +63,6 @@ figE = fig.add_subplot(111, projection='3d')
 figE.plot_surface(x,y,E)
 figE.set_xlabel('X (m)')
 figE.set_ylabel('Y (m)')
-figE.set_zlabel('Horizontal Illuminance')
+figE.set_zlabel('Horizontal Illuminance (lx)')
 
 plt.show()
