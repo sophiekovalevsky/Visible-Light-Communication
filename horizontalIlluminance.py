@@ -41,7 +41,7 @@ htr = ht - hr
 nLed = 60
 
 # Generate the receiver plane based on grid vectors
-[xr, yr] = np.meshgrid(x,y)
+xr, yr = np.meshgrid(x,y)
 
 # Create a zero matrix to store values of horizontal iluminance
 E = np.zeros((ngx,ngy))
@@ -60,7 +60,7 @@ E = E*nLed*nLed
 
 fig = plt.figure()
 figE = fig.add_subplot(111, projection='3d')
-figE.plot_surface(x,y,E)
+figE.plot_surface(xr,yr,E)
 figE.set_xlabel('X (m)')
 figE.set_ylabel('Y (m)')
 figE.set_zlabel('Horizontal Illuminance (lx)')
